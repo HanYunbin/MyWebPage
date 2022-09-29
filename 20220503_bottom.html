@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(255, 255, 238);
+            text-align: center;
+        }
+    </style>
+    <script>
+        function load() {
+            let select = document.getElementById("site");
+            window.location = select.options[select.selectedIndex].value;
+            
+        }
+    </script>
+</head>
+<body>
+    <!-- <select id="site" target="right">
+        <option value="https://mabinogi.nexon.com/page/main/" selected target="right">마비노기</option>
+        <option value="http://www.yuridol.net/">유리돌 피플게임</option>
+        <option value="https://df.nexon.com/df/home">던전 앤 파이터</option>
+    </select>
+    <p>
+        <button onclick="load()">웹 사이트 접속</button>
+    </p> -->
+    <br>
+    재생 버튼을 누르면 음악이 연주됩니다.
+    <br>
+    <br>
+    <audio src="img/Title_Open_Ver.mp3" controls loop>브라우저가 audio 태그를 지원하지 않습니다</audio>
+</body>
+</html>
